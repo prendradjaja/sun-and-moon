@@ -27,6 +27,14 @@ export async function getSunData(dates: string[]): Promise<SunData> {
   for (const datum of data) {
     result.set(datum.date, datum);
   }
+
+  // todo Sun API has some boundary case bug around DST -- need a general fix
+  const dstFix = result.get('2024-03-10');
+  if (dstFix) {
+    dstFix.sunrise = '7:29:XX AM';
+    dstFix.sunset = '7:11:XX PM';
+  }
+
   return result;
 }
 

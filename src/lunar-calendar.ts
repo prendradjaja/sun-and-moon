@@ -3,7 +3,7 @@ export const lunarCalendar = [
   { date: '2024-01-25', isDST: false, type: 'full-moon' },
   { date: '2024-02-09', isDST: false, type: 'new-moon' },
   { date: '2024-02-24', isDST: false, type: 'full-moon' },
-  { date: '2024-03-10', isDST: false, type: 'new-moon' },
+  { date: '2024-03-10', isDST: true, type: 'new-moon' },
   { date: '2024-03-25', isDST: true, type: 'full-moon' },
   { date: '2024-04-08', isDST: true, type: 'new-moon' },
   { date: '2024-04-23', isDST: true, type: 'full-moon' },
