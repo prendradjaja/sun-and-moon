@@ -1,3 +1,20 @@
 body {
   margin: 10px;
+  font-family: Arial;
+}
+
+td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.is-dst {
+  background: hsl(50 70 85);
+}
+
+.new-moon {
+  color: hsl(50 0 85);
+}
+.new-moon.is-dst {
+  color: hsl(50 50 60);
 }
